@@ -18,5 +18,14 @@ class MultiDimensionalArrays{
             }
              System.out.println();
         }
+
+        System.out.println("Print using modern for loop");
+        for(int arr[]: nums){
+            for(int element: arr){
+                 element = (int) (Math.random() * 100); //Math.random gives double values and when multiplied by 100 we get values which are then casted to integer
+                System.out.print(element+" "); //prints empty array
+            }
+            System.out.println();
+        }
     }
 }
